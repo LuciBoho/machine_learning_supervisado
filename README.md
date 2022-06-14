@@ -43,3 +43,45 @@ Headings
 Units of measurement: are all numeric and they are standarized.
 
 Missing data: we fill some variables with "0" and others with mean().
+
+## Predicción de precios de AIRBNB (junio de 2022)
+
+El objetivo de este proyecto es encontrar el mejor modelo supervisado que se ajuste a nuestros datos. Queremos predecir la variable Precio con nuestras diferentes variables.Es un modelo de regresión. Estamos utilizando tres modelos: Random Forest, Support Vector Machine y Neural Networks. 
+
+Aquí estamos utilizando Python 3.6. Este lenguaje es uno de los más comunes para utilizar el aprendizaje supervisado con el fin de encontrar el modelo de regresión. Principalmente utilizamos librerías como: pandas, numpy, sklearn, tensorflow, keras, seaborn y stats. 
+
+Este estudio es para la Universidad de CUNEF. Incluye un archivo que tiene en cuenta los alquileres de airbnb con el precio de la noche de cada uno en ellos. Los datos son recogidos por nuestro profesor. Los datos están geolocalizados principalmente en Madrid, sin embargo, también hay de Londres, Francia o Barcelona.
+
+Palabras clave: Machine Learning, datos supervisados, Python, PCA, variables, casa, precio, precio semanal, regresor, Random forest, SVR, Neuronal Network, predicción, Accomodation, OnehotEncoding, Keras, MSE, R2, métrica, pérdida, feature_importance, GridsearchCV, validación cruzada, train, test. 
+
+#### INFORMACIÓN METODOLÓGICA
+
+En primer lugar, en este proyecto hemos analizado nuestras variables haciendo un análisis exploratorio. Al hacer la correlación de las variables, vimos cuáles son las que más se correlacionan con la variable principal, el Precio. Como hemos visto que hay valores atípicos, hemos hecho un PCA (Análisis de Componentes Principales) para reducir la dimensionalidad y aumentar la variabilidad.
+
+El punto principal de este análisis son los modelos de regresión. Analizamos el bosque aleatorio, la máquina de vectores de apoyo y la red neuronal.
+
+
+>Bosque aleatorio: es uno de los embsambladores de bolsas que son capaces de predecir los precios y ajustarse a los conjuntos de datos de Ribnb. Sin embargo, este modelo puede sufrir de sesgo y varianza, por lo que vamos a utilizar la validación cruzada para poder utilizar diferentes estrategias para reducirlo. Además, estudiamos las variables que ayudan a que el modelo sea con una mejor puntuación y un bajo error. Por último, en este modelo, utilizamos prunning que también nos ayuda a reducir la varianza del modelo y hacer una mejor predicción.
+
+
+>Máquina de vectores de apoyo: utilizamos la regresión de vectores de apoyo que genera un algoritmo que encuentra un hiperplano que optimiza la separación entre un conjunto de datos con dos clases linealmente separables. Miramos la linearSVR y también la SVR. Además, miramos qué hiperparámetros son los mejores para este modelo. Y finalmente, calculamos el RMSE y la puntuación para el entrenamiento y también para la prueba.
+
+
+>Red neuronal: es el último modelo que vamos a estudiar. El aprendizaje profundo está soportado por muchas librerías, entre otras encontramos, Keras y tensorFlow. Seguimos los pasos importantes para poder evaluar el modelo: compilar, ajustar, predecir y evaluar. Además, estudiamos el MSE y el R2, para poder mirar si el modelo se ajusta a nuestros datos. 
+
+Finalmente, comparamos los tres modelos, y encontramos que las redes neuronales son las que mejor se ajustan a nuestro modelo. Con un r2 alto y un MSE bajo.
+
+
+#### INFORMACIÓN ESPECÍFICA DE LOS DATOS
+
+Rúbricas
+
+1. ANÁLISIS EXPLORATORIO
+2. CONJUNTO DATOS: TRAIN & TEST ("Entrenamiento y prueba")
+3. MODELOS DE REGRESIÓN ("Regression models")
+4. CONCLUSIÓN
+
+
+Unidades de medida: son todas numéricas y están estandarizadas.
+
+Datos perdidos: rellenamos algunas variables con "0" y otras con media().
