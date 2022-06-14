@@ -25,9 +25,9 @@ The main point in this analysis is the regression models. We look at Random Fore
 >Support Vector machine: we use Supooort vector regression that generates an algorithm that finds an hyperplane that optimizes the separation between a data set with two linearly separable classes. We look at linearSVR and also SVR. Also, we look at which hiperparameters are the best for this model. And finally, we calculate RMSE and score for train and also for test.
 
 
->Neural network: is the last model we are going to study. Deep learning is wsupported by many libraries, among other we find, Keras and tensorFlow. We follow the steps that are important so that we can evaluate the model : compile, fit, predict and evaluate. Moreover, we study the MSE and R2, so that we can look if the model fits our data. 
+>Neural network: is the last model we are going to study. Deep learning is supported by many libraries, among other we find, Keras and tensorFlow. We follow the steps that are important so that we can evaluate the model : compile, fit, predict and evaluate. Moreover, we study the MSE and R2, so that we can look if the model fits our data. 
 
-Finally, we compare the three models, and we found that neural networks are the ones that best fits our model. With high r2 and low MSE.
+Finally, we compare the three models, and we found that SVR is the best model.
 
 
 #### DATA SPECIFIC INFORMATION
@@ -42,7 +42,10 @@ Headings
 
 Units of measurement: are all numeric and they are standarized.
 
-Missing data: we fill some variables with "0" and others with mean().
+Missing data: we fill some variables with "0" and others with mean().        
+
+# APRENDIZAJE AUTOMÁTICO: APRENDIZAJE SUPERVISADO
+
 
 ## Predicción de precios de AIRBNB (junio de 2022)
 
@@ -58,10 +61,10 @@ Palabras clave: Machine Learning, datos supervisados, Python, PCA, variables, ca
 
 En primer lugar, en este proyecto hemos analizado nuestras variables haciendo un análisis exploratorio. Al hacer la correlación de las variables, vimos cuáles son las que más se correlacionan con la variable principal, el Precio. Como hemos visto que hay valores atípicos, hemos hecho un PCA (Análisis de Componentes Principales) para reducir la dimensionalidad y aumentar la variabilidad.
 
-El punto principal de este análisis son los modelos de regresión. Analizamos el bosque aleatorio, la máquina de vectores de apoyo y la red neuronal.
+El punto principal de este análisis son los modelos de regresión. Analizamos el Random forest, la máquina de vectores de apoyo y la red neuronal.
 
 
->Bosque aleatorio: es uno de los embsambladores de bolsas que son capaces de predecir los precios y ajustarse a los conjuntos de datos de Ribnb. Sin embargo, este modelo puede sufrir de sesgo y varianza, por lo que vamos a utilizar la validación cruzada para poder utilizar diferentes estrategias para reducirlo. Además, estudiamos las variables que ayudan a que el modelo sea con una mejor puntuación y un bajo error. Por último, en este modelo, utilizamos prunning que también nos ayuda a reducir la varianza del modelo y hacer una mejor predicción.
+>Random forest: es uno de los embsambladores de bolsas que son capaces de predecir los precios y ajustarse a los conjuntos de datos de Ribnb. Sin embargo, este modelo puede sufrir de sesgo y varianza, por lo que vamos a utilizar la validación cruzada para poder utilizar diferentes estrategias para reducirlo. Además, estudiamos las variables que ayudan a que el modelo sea con una mejor puntuación y un bajo error. Por último, en este modelo, utilizamos prunning que también nos ayuda a reducir la varianza del modelo y hacer una mejor predicción.
 
 
 >Máquina de vectores de apoyo: utilizamos la regresión de vectores de apoyo que genera un algoritmo que encuentra un hiperplano que optimiza la separación entre un conjunto de datos con dos clases linealmente separables. Miramos la linearSVR y también la SVR. Además, miramos qué hiperparámetros son los mejores para este modelo. Y finalmente, calculamos el RMSE y la puntuación para el entrenamiento y también para la prueba.
@@ -69,19 +72,4 @@ El punto principal de este análisis son los modelos de regresión. Analizamos e
 
 >Red neuronal: es el último modelo que vamos a estudiar. El aprendizaje profundo está soportado por muchas librerías, entre otras encontramos, Keras y tensorFlow. Seguimos los pasos importantes para poder evaluar el modelo: compilar, ajustar, predecir y evaluar. Además, estudiamos el MSE y el R2, para poder mirar si el modelo se ajusta a nuestros datos. 
 
-Finalmente, comparamos los tres modelos, y encontramos que las redes neuronales son las que mejor se ajustan a nuestro modelo. Con un r2 alto y un MSE bajo.
-
-
-#### INFORMACIÓN ESPECÍFICA DE LOS DATOS
-
-Rúbricas
-
-1. ANÁLISIS EXPLORATORIO
-2. CONJUNTO DATOS: TRAIN & TEST ("Entrenamiento y prueba")
-3. MODELOS DE REGRESIÓN ("Regression models")
-4. CONCLUSIÓN
-
-
-Unidades de medida: son todas numéricas y están estandarizadas.
-
-Datos perdidos: rellenamos algunas variables con "0" y otras con media().
+Finalmente, comparamos los tres modelos, y encontramos que SVR es el mejor modelo.
